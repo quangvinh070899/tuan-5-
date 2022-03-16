@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: auto;
+        }
+        body{
+            background-image: url(./backgroud.png.jfif);
+        }
+        .wrapper{
+            width: 1089px;
+            height: 700px;
+            background-color: antiquewhite;
+        }
+        header{
+            width: 1089px;
+            height: 150px;
+            background-image: url(./header.jfif);
+        }
+        .content{
+            width: 100%;
+            height: 300px;
+            background-color: rgb(238, 184, 184);
+        }
+        nav{
+            width:100%;
+            height: 50px;
+            background-color: aqua;
+            line-height: 50px;
+        }
+        section{
+            width: 60%;
+            height: 100%;
+            background-color: burlywood;
+            float: left;
+            }
+        aside {
+            height:100%;
+            width:40%;
+            background-color: blue;
+            float: left;
+        }      
+        .menu li{
+            height: 100%;
+            width: 130px;
+            background-color: antiquewhite;
+            float: left;
+            line-height: 50px;
+            text-indent: 20px;
+            list-style: none;
+            position: relative;
+
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu li:hover {
+            background-color: black;
+
+        }
+        li:hover>a{
+            color: white;
+            font-style: italic;
+        }
+        .menu li .submenu {
+            display: none;
+            position: absolute;
+
+        }
+        .menu li:hover .submenu {
+            display:block;
+        }
+        nav span form #btnGo {
+            padding: 3px;
+            border-radius: 50%;
+
+        }
+        nav span form #txtEmail {
+            padding : 3px;
+            border-radius: 10%;
+
+        }
+        .wrapper header p {
+            font-size: 50px;
+            text-shadow: 10px 20px 20px red;
+            text-align:center;
+        }
+        .wrapper header:hover p{
+            transform :rotate(25deg);
+        }
+    </style>
+</head>
+
+<body>		
+    <div class="wrapper">		
+    	<nav>		
+    	    <ul class="menu">		
+    	        <li><a href="http://24h.com.vn">HOME</a></li>
+    	        <li><a href="">SERVICES</a></li>		
+                <li><a href="">CONTACT</a>		
+                    <ul class="submenu">		
+                        <li><a href="">PHONE</a></li>		
+                        <li><a href="">INTERNET</a></li>		
+                        <li><a href="">TIVI</a></li>		
+                     </ul>		
+    	        </li>		
+    	        <li><a href="">ABOIJT</a></li>		
+                <li><a href="">HELP</a></li>		
+    	    </ul>		
+    	    <span>		
+                <form action="" method="post">		
+                    <label for="Email">Email: </label>		
+    	            <input type="email"name="txtEmail" id="txtEmail"	required	placeholder="nhap email" minlength="20">
+    	            <input type="submit" value="GO" id="btnGo">		
+    	        </form>		
+    	    </span>		
+    	</nav>		
+    	<header>
+            <p>GAME SHOW</p>		
+    	</header>		
+    	<div class="content">		
+    	    <aside>		
+	            <article>		
+    	            <h2>HOAT DOAN</h2>		
+    	            <img src="../layout tuan 5/h1.jfif" alt="" srcset="">		
+    	        </article>		
+                <article>
+            	    <h2>HOAT HOC TAP</h2>
+            	<img src="../layout tuan 5/h2.jfif" alt="" srcset="">
+            	</article>
+            	<article>
+        	        <h2>HOAT MUA HE XANH</h2>
+            	<img src="../layout tuan 5/h2.jfif" alt="" srcset="">
+            	</article>
+            
+            	</aside>
+            	<section>
+            	<h2>DANG KY DANH SACH</h2>
+            	<form action="dangky.php" method="post">
+            	<fieldset>
+            	<legend>Thong tin cua ban</legend>
+            <label for="1b1HoTen">Ho ten: </label>
+            	<input type="text" name="txtHT" id="txtHT" required placeholder="Nhap ho ten" minlength="20"> <br> <br>
+            <label for="lblGioiTinh">Gioi tinh: </label>
+            <input type="radio" name="radNam" id="radNam" value=“anm->
+            	<Label>Nam</Label>
+            	<input type="radio" name="radNam" id="radNu" value="nu"> <label>Nu</label>
+            	<br> <br>
+            	<label for="ngaySinh">Ngay Sinh</label>
+            	<input type="clate" name="txtDate" id="txtDate" required placeholder="Ngay Sinh" minlength="20" pattern="cld/MM/yyyy"> <br> <br>
+            <label for="1b1HoTen">Ho ten: </label>
+            	<input type="text" name="txtHT" id="txtHT" required placeholder="Nhap ho ten" minlength="20"> <br> <br>
+            	<input type="submit" value="GO">
+            
+            	</fieldset>
+            	</form>
+            	</section>
+            	<Idly>
+            	<footer></footer>
+        </div>
+ </body>
